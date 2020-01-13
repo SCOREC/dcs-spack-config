@@ -1,0 +1,49 @@
+compilers:
+- compiler:
+    spec: gcc@4.8.5_rhel7
+    operating_system: rhel7
+    modules: []
+    paths:
+      cc:  /usr/bin/gcc
+      cxx: /usr/bin/g++
+      f77: 
+      fc:  
+    environment: {}
+    flags: {}
+- compiler:
+    spec: xl@16.1.1
+    operating_system: rhel7
+    modules: [xl_r/16.1.1]
+    paths:
+      cc:  /opt/ibm/xlC/16.1.1/bin/xlc_r
+      cxx: /opt/ibm/xlC/16.1.1/bin/xlc++_r
+      f77: /opt/ibm/xlf/16.1.1/bin/xlf_r
+      fc:  /opt/ibm/xlf/16.1.1/bin/xlf2008_r
+    extra_rpaths:
+      - /opt/ibm/lib
+      - /opt/ibm/xlf/16.1.1/lib
+      - /opt/ibm/xlC/16.1.1/lib
+    environment: {}
+    flags: {}
+- compiler:
+    spec: gcc@8.2.0-1
+    operating_system: rhel7
+    modules: [gcc/8.2.0/1]
+    paths:
+      cc:   /gpfs/u/software/ppc64le-rhel7/gcc/8.2.0/1/bin/gcc
+      cxx:  /gpfs/u/software/ppc64le-rhel7/gcc/8.2.0/1/bin/g++
+      f77:  /gpfs/u/software/ppc64le-rhel7/gcc/8.2.0/1/bin/gfortran
+      fc:   /gpfs/u/software/ppc64le-rhel7/gcc/8.2.0/1/bin/gfortran
+    environment: {}
+    flags: {}
+- compiler:
+    spec: gcc@7.4.0-1
+    operating_system: rhel7
+    modules: [gcc/7.4.0/1]
+    paths:
+      cc:   /gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin/gcc
+      cxx:  /gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin/g++
+      f77:  /gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin/gfortran
+      fc:   /gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin/gfortran
+    environment: {}
+    flags: {}

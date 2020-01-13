@@ -1,0 +1,17 @@
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+spack:
+  include:
+  - config.yaml
+  - packages.yaml
+  - modules.yaml
+  view: false
+  definitions:
+  - pumi:
+    - pumi@develop +zoltan ^zoltan+parmetis~fortran
+  specs:
+  - matrix:
+    - [cmake, $pumi, fftw, adios@1.13.1+fortran, adios2, netlib-lapack, hypre@2.13.0]
+    - ['%gcc@7.4.0']
