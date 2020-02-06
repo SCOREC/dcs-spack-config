@@ -47,3 +47,14 @@ compilers:
       fc:   /gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin/gfortran
     environment: {}
     flags: {}
+- compiler:
+    spec: gcc@6.4.0-1
+    operating_system: rhel7
+    modules: [gcc/6.4.0/1]
+    paths:
+      cc:   /gpfs/u/software/ppc64le-rhel7/gcc/6.4.0/1/bin/gcc
+      cxx:  /gpfs/u/software/ppc64le-rhel7/gcc/6.4.0/1/bin/g++
+      f77:  /gpfs/u/software/ppc64le-rhel7/gcc/6.4.0/1/bin/gfortran
+      fc:   /gpfs/u/software/ppc64le-rhel7/gcc/6.4.0/1/bin/gfortran
+    environment: {}
+    flags: {}

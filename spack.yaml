@@ -11,7 +11,9 @@ spack:
   definitions:
   - pumi:
     - pumi@develop +zoltan ^zoltan+parmetis~fortran
+  - petsc:
+    - petsc@develop ~hdf5 ~hypre ~superlu-dist
   specs:
   - matrix:
-    - [cmake, hdf5@1.10.3, $pumi, fftw, adios@1.13.1+fortran, adios2, netlib-lapack, hypre@2.13.0]
-    - ['%gcc@7.4.0']
+    - [hdf5@1.10.3, $pumi, fftw, adios@1.13.1+fortran, adios2 ~sst ^zeromq@develop, netlib-lapack, $petsc]
+    - ['%xl@16.1.1']
