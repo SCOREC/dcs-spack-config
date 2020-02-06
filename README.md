@@ -1,5 +1,6 @@
 # dcs-spack-config
-CCI DCS (AiMOS) spack configuration and scripts
+CCI DCS (AiMOS) spack configuration and scripts for building the XGC depdencies
+with the IBM XL compilers and Spectrum-MPI.
 
 ## contents
 
@@ -28,13 +29,22 @@ git checkout v0.13.3
 # add the simmetrix-simmodsuite package from the develop branch
 git cherry-pick 5ddf5e2
 # create the environment
-spack env create dev
-spack env activate dev
-# copy the yaml files into the dev
-cp /path/to/the/dir/with/the/yaml/files/* var/spack/environments/dev/.
+spack env create v0133
+spack env activate v0133
+# copy the yaml files into the v0133
+cp /path/to/the/dir/with/the/yaml/files/* var/spack/environments/v0133/.
 # copy the compiler yaml file into the spack etc dir
 cp /path/to/the/dir/with/the/yaml/files/compilers.yaml etc/spack/.
-# comment out the gcc 6.5.0, 7.4.0 and llvm sections of compilers.yaml 
-# as they have not yet been installed - not sure if this is completely necessary
 ```
+
+## install cmake
+
+The bootstrap step of the cmake install fails with the XL compilers.  I
+installed it manually outside of the environment with spack and gcc4.8.5 
+
+```
+spack install cmake%gcc@4.8.5_rhel7
+```
+
+Then added the path to `packages.yaml`.
 
