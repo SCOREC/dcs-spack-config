@@ -19,7 +19,7 @@ packages:
     providers:
       mpi: [spectrum-mpi]
       cmake: [cmake@3.15.4]
-      openblas: [openblas@0.3.7]
+      blas: [netlib-lapack]
   spectrum-mpi:
     buildable: False
     modules: 
@@ -64,7 +64,3 @@ packages:
     buildable: False
     paths:
       cmake@3.15.4: /gpfs/u/software/dcs-spack-install/base/linux-rhel7-power8le/gcc-4.8.5_rhel7/cmake-3.15.4-mf3jeaiby7kyhpcp6p3khweihcejpsb7
-  openblas:
-    buildable: False
-    paths:
-      openblas@0.3.7: /gpfs/u/software/dcs-spack-install/base/linux-rhel7-power9le/gcc-6.4.0-1/openblas-0.3.7-gukgklda33it2gjcz72kok6tyuwnbkuu

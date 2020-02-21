@@ -15,5 +15,5 @@ spack:
     - petsc@develop ~hdf5 ~hypre ~superlu-dist
   specs:
   - matrix:
-    - [hdf5@1.10.3, $pumi, fftw, adios@1.13.1+fortran, adios2 ~sst ^zeromq@develop, netlib-lapack, $petsc]
+    - [hdf5@1.10.3, $pumi, fftw, adios@1.13.1+fortran, adios2 ~sst ^zeromq@develop, netlib-lapack, $petsc, hypre]
     - ['%xl@16.1.1']
