@@ -48,3 +48,10 @@ spack install cmake%gcc@4.8.5_rhel7
 
 Then added the path to `packages.yaml`.
 
+## resuming work in an environment
+
+```
+source /gpfs/u/software/dcs-spack-src/setupSpack.sh
+spack env activate v0133
+```
+
