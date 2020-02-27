@@ -12,7 +12,7 @@ spack:
   - pumi:
     - pumi@develop +zoltan ^zoltan+parmetis~fortran
   - petsc:
-    - petsc@develop ~hdf5 ~hypre ~superlu-dist
+    - petsc@3.7.7 ~hdf5 ~hypre ~superlu-dist
   specs:
   - matrix:
     - [hdf5@1.10.3, $pumi, fftw, adios@1.13.1+fortran, adios2 ~sst ^zeromq@develop, netlib-lapack, $petsc, hypre]
