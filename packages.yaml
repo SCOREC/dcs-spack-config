@@ -56,6 +56,7 @@ packages:
     buildable: False
     paths:
       python@3.6.8: /usr
+      python@2.7: /usr
   cuda:
     buildable: False
     paths:
