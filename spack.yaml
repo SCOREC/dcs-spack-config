@@ -13,7 +13,9 @@ spack:
     - pumi@develop +zoltan ^zoltan+parmetis~fortran
   - petsc:
     - petsc@3.7.7 ~hdf5 ~hypre ~superlu-dist
+  - petscDbg:
+    - petsc@3.7.7 ~hdf5 ~hypre ~superlu-dist +debug
   specs:
   - matrix:
-    - [hdf5@1.10.3, $pumi, fftw, adios@1.13.1+fortran, adios2 ~sst ^zeromq@develop, netlib-lapack, $petsc, hypre]
+    - [hdf5@1.10.3, $pumi, fftw, adios@1.13.1+fortran, adios2 ~sst ^zeromq@develop, netlib-lapack, $petsc, $petscDbg, hypre]
     - ['%xl@16.1.1']

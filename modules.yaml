@@ -90,6 +90,7 @@ modules:
         '^hdf5+fortran': hdf5+ftn
         '+complex': complex
         '~complex': real
+        '+debug': debug
         'clanguage=C++': c++
         'clanguage=C': c
       autoload: 'all'
