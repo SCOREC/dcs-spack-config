@@ -51,7 +51,7 @@ Then added the path to `packages.yaml`.
 ## resuming work in an environment
 
 ```
-source /gpfs/u/software/dcs-spack-src/setupSpack.sh
+source /gpfs/u/software/dcs-spack-src/dcs-spack-config/setupSpack.sh
 spack env activate v0133
 ```
 
