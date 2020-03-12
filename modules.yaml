@@ -60,6 +60,8 @@ modules:
       suffixes:
         '^metis+int64': int64
         '^metis~int64': int32
+        '^metis+real64': real64
+        '^metis~real64': real32
       autoload: 'all'
     zoltan:
       suffixes:
