@@ -18,5 +18,5 @@ spack:
   specs:
   - openmpi
   - matrix:
-    - [cmake, hdf5@1.10.3, hdf5@1.10.3+fortran, $pumi, fftw, adios@1.13.1+fortran, adios2 ^zeromq@develop, netlib-lapack, $petsc, $petscDbg, hypre, netlib-scalapack]
+    - [cmake, hdf5@1.10.3, hdf5@1.10.3+fortran, netcdf-cxx ^netcdf ^hdf5@1.10.3+hl+cxx, $pumi, fftw, adios@1.13.1+fortran, adios2 ^zeromq@develop, netlib-lapack, $petsc, $petscDbg, hypre, netlib-scalapack]
     - ['%gcc@7.4.0-1']
