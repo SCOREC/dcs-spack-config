@@ -80,10 +80,14 @@ modules:
     hdf5:
       suffixes:
         '+fortran': ftn
+        '+hl': hl
+        '+cxx': cxx
       autoload: 'all'
     netcdf:
       autoload: 'all'
-    netcdf-cxx4:
+    netcdf-cxx:
+      suffixes:
+        '+netcdf4': ncdf4
       autoload: 'all'
     petsc:
       suffixes:
@@ -95,6 +99,11 @@ modules:
         '+debug': debug
         'clanguage=C++': c++
         'clanguage=C': c
+      autoload: 'all'
+    kokkos:
+      suffixes:
+        '+debug': debug
+        '+cuda': cuda
       autoload: 'all'
     llvm:
       suffixes:
