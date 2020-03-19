@@ -35,6 +35,10 @@ spack env activate v0133gcc
 cp /path/to/the/dir/with/the/yaml/files/* var/spack/environments/v0133/.
 # copy the compiler yaml file into the spack etc dir
 cp /path/to/the/dir/with/the/yaml/files/compilers.yaml etc/spack/.
+# add the wdmapp/wdmapp-config repo
+# https://wdmapp.readthedocs.io/en/latest/spack/setup.html
+git clone git@github.com:wdmapp/wdmapp-config.git
+spack repo add wdmapp-config/spack/wdmapp
 ```
 
 ## resuming work in an environment
