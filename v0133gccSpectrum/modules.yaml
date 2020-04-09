@@ -85,6 +85,8 @@ modules:
       autoload: 'all'
     netcdf:
       autoload: 'all'
+      suffixes:
+        '+parallel-netcdf': pnetcdf
     netcdf-cxx:
       autoload: 'all'
       suffixes:

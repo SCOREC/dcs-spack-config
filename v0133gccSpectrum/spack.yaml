@@ -13,5 +13,5 @@ spack:
     - pumi@develop +zoltan ^zoltan+parmetis~fortran
   specs:
   - matrix:
-    - [cmake, openblas, boost, libxml2, xz, netlib-lapack, netcdf-cxx ^netcdf ^hdf5@1.10.3+hl+cxx, $pumi, hypre]
+    - [cmake, openblas, boost, libxml2, xz, netlib-lapack, netcdf-cxx ^netcdf+parallel-netcdf ^hdf5@1.10.3+hl+cxx, $pumi, hypre]
     - ['%gcc@7.4.0-1']
