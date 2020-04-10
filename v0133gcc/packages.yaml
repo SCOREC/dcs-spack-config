@@ -59,3 +59,7 @@ packages:
     buildable: False
     paths:
       slurm@system: /usr
+  pkg-config:
+    buildable: False
+    paths:
+      pkg-config@system: /usr
