@@ -105,6 +105,10 @@ modules:
         '+debug': debug
         '+cuda': cuda
       autoload: 'all'
+    adios:
+      autoload: 'all'
+    adios2:
+      autoload: 'all'
     llvm:
       suffixes:
         '+clang': clang-tools
