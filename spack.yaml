@@ -17,5 +17,5 @@ spack:
     - petsc@3.7.7 ~hdf5 ~hypre ~superlu-dist +debug
   specs:
   - matrix:
-    - [hdf5@1.10.3, hdf5@1.10.3+fortran, $pumi, fftw, adios@1.13.1+fortran, adios2 ^zeromq@develop, netlib-lapack, $petsc, $petscDbg, hypre, netlib-scalapack]
+    - [cuda@10.2, hdf5@1.10.3, hdf5@1.10.3+fortran, $pumi, fftw, adios@1.13.1+fortran, adios2 ^zeromq@develop, netlib-lapack, $petsc, $petscDbg, hypre, netlib-scalapack]
     - ['%xl@16.1.1']
