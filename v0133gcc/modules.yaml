@@ -100,10 +100,16 @@ modules:
         'clanguage=C++': c++
         'clanguage=C': c
       autoload: 'all'
+    cabana:
+      suffixes:
+        '+cuda': cuda
+        '+openmp': openmp
+      autoload: 'all'
     kokkos:
       suffixes:
         '+debug': debug
         '+cuda': cuda
+        '+openmp': openmp
       autoload: 'all'
     adios:
       autoload: 'all'
