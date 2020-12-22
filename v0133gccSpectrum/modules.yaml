@@ -35,6 +35,7 @@ modules:
       environment:
         set:
           '${PACKAGE}_ROOT': '${PREFIX}'
+      autoload: 'all'
     simmetrix-simmodsuite:
       environment:
         set:
