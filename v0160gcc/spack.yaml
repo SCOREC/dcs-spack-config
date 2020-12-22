@@ -12,11 +12,11 @@ spack:
       lmod: /gpfs/u/software/dcs-spack-install/v0160gcc/lmod
   view: false
   specs:
-  - cmake
+  - cmake ~openssl
   - openmpi +cuda +pmi schedulers=slurm ^hwloc@1.11.11
   - fftw
-  - netlib-lapack
-  - netlib-scalapack
+  - netlib-lapack ^cmake~openssl
+  - netlib-scalapack ^cmake~openssl
 
   compilers:
   - compiler:
@@ -296,4 +296,13 @@ spack:
       target: []
       compiler: []
       buildable: true
+      providers: {}
+    clingo:
+      externals:
+      - spec: clingo@5.4.1
+        prefix: /gpfs/u/software/ppc64le-rhel7/clingo
+      version: []
+      target: []
+      compiler: []
+      buildable: false
       providers: {}
