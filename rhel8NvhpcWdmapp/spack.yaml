@@ -29,6 +29,11 @@ spack:
         - gcc@8.4.1
         - xl@16.1
         - xl_r@16.1
+        all:
+          environment:
+            set:
+              '${PACKAGE}_ROOT': '${PREFIX}'
+          autoload: 'all'
   compilers:
   - compiler:
       spec: nvhpc@21.2
