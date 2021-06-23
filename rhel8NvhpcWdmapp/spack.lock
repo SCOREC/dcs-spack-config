@@ -1,0 +1,229 @@
+{
+ "_meta": {
+  "file-type": "spack-lockfile",
+  "lockfile-version": 2
+ },
+ "roots": [
+  {
+   "hash": "2n55vlsadnky2pyxrs5daio7rgbfywth",
+   "spec": "openmpi"
+  },
+  {
+   "hash": "vjas4ouhbynpzeoep4hcitbth2he4nrk",
+   "spec": "cmake"
+  },
+  {
+   "hash": "maduxoppokcafyeo72pfqoxn7n4wcgpj",
+   "spec": "pspline"
+  },
+  {
+   "hash": "nfd4adyqpywbgzivewz3mh42ugoyihaj",
+   "spec": "netlib-lapack"
+  }
+ ],
+ "concrete_specs": {
+  "2n55vlsadnky2pyxrs5daio7rgbfywth": {
+   "openmpi": {
+    "version": "3.1.5",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "rhel8",
+     "target": {
+      "name": "power9le",
+      "vendor": "IBM",
+      "features": [],
+      "generation": 9,
+      "parents": [
+       "power8le"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "nvhpc",
+     "version": "21.2"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "atomics": false,
+     "cuda": false,
+     "cxx": false,
+     "cxx_exceptions": false,
+     "fabrics": [
+      "none"
+     ],
+     "gpfs": true,
+     "internal-hwloc": false,
+     "java": false,
+     "legacylaunchers": false,
+     "lustre": false,
+     "memchecker": false,
+     "patches": [
+      "fba0d3a784a9723338722b48024a22bb32f6a951db841a4e9f08930a93f41d7a"
+     ],
+     "pmi": false,
+     "schedulers": [
+      "none"
+     ],
+     "singularity": false,
+     "sqlite3": false,
+     "static": true,
+     "thread_multiple": false,
+     "vt": true,
+     "wrapper-rpath": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "external": {
+     "path": "/opt/nvidia/hpc_sdk/Linux_ppc64le/21.2/comm_libs/mpi",
+     "module": null,
+     "extra_attributes": {}
+    },
+    "patches": [
+     "fba0d3a784a9723338722b48024a22bb32f6a951db841a4e9f08930a93f41d7a"
+    ],
+    "hash": "2n55vlsadnky2pyxrs5daio7rgbfywth"
+   }
+  },
+  "vjas4ouhbynpzeoep4hcitbth2he4nrk": {
+   "cmake": {
+    "version": "3.18.2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "rhel8",
+     "target": {
+      "name": "power9le",
+      "vendor": "IBM",
+      "features": [],
+      "generation": 9,
+      "parents": [
+       "power8le"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "nvhpc",
+     "version": "21.2"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "build_type": "Release",
+     "doc": false,
+     "ncurses": true,
+     "openssl": true,
+     "ownlibs": true,
+     "patches": [
+      "bf695e3febb222da2ed94b3beea600650e4318975da90e4a71d6f31a6d5d8c3d"
+     ],
+     "qt": false,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "external": {
+     "path": "/usr",
+     "module": null,
+     "extra_attributes": {}
+    },
+    "patches": [
+     "bf695e3febb222da2ed94b3beea600650e4318975da90e4a71d6f31a6d5d8c3d"
+    ],
+    "hash": "vjas4ouhbynpzeoep4hcitbth2he4nrk"
+   }
+  },
+  "maduxoppokcafyeo72pfqoxn7n4wcgpj": {
+   "pspline": {
+    "version": "0.1.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "rhel8",
+     "target": {
+      "name": "power9le",
+      "vendor": "IBM",
+      "features": [],
+      "generation": 9,
+      "parents": [
+       "power8le"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "nvhpc",
+     "version": "21.2"
+    },
+    "namespace": "wdmapp",
+    "parameters": {
+     "build_type": "RelWithDebInfo",
+     "ipo": false,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "cmake": {
+      "hash": "vjas4ouhbynpzeoep4hcitbth2he4nrk",
+      "type": [
+       "build"
+      ]
+     }
+    },
+    "hash": "jgbrfywoshok7jzdu2ysqxveziuo2udm"
+   }
+  },
+  "nfd4adyqpywbgzivewz3mh42ugoyihaj": {
+   "netlib-lapack": {
+    "version": "3.9.1",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "rhel8",
+     "target": {
+      "name": "power9le",
+      "vendor": "IBM",
+      "features": [],
+      "generation": 9,
+      "parents": [
+       "power8le"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "nvhpc",
+     "version": "21.2"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "build_type": "RelWithDebInfo",
+     "external-blas": false,
+     "ipo": false,
+     "lapacke": true,
+     "shared": true,
+     "xblas": false,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "cmake": {
+      "hash": "vjas4ouhbynpzeoep4hcitbth2he4nrk",
+      "type": [
+       "build"
+      ]
+     }
+    },
+    "hash": "mmgq6zoy5vrnuyq3kodqmvtqrtpsabez"
+   }
+  }
+ }
+}
