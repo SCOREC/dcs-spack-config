@@ -14,12 +14,13 @@ spack:
   repos:
   - /gpfs/u/home/MPFS/MPFSsmth/barn/wdmapp_rhel8/wdmapp-config/spack/wdmapp
   mirrors:
-    wdmSources: file:///gpfs/u/home/MPFS/MPFSsmth/barn/wdmapp_rhel8/spack-mirror-21-01-21
+    localSources: file:///gpfs/u/home/MPFS/MPFSsmth/barn/wdmapp_rhel8/spackMirror
   specs:
   - openmpi
   - cmake
   - pspline
   - netlib-lapack
+  - c-blosc
   modules:
     enable:
     - lmod
@@ -32,8 +33,8 @@ spack:
         all:
           environment:
             set:
-              '${PACKAGE}_ROOT': '${PREFIX}'
-          autoload: 'all'
+              ${PACKAGE}_ROOT: ${PREFIX}
+          autoload: all
   compilers:
   - compiler:
       spec: nvhpc@21.2
