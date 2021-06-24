@@ -34,7 +34,6 @@ spack:
           environment:
             set:
               ${PACKAGE}_ROOT: ${PREFIX}
-          autoload: all
   compilers:
   - compiler:
       spec: nvhpc@21.2
